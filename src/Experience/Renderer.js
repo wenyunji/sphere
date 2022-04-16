@@ -17,10 +17,10 @@ export default class Renderer
         this.camera = this.experience.camera
 
         // Debug
-        if(this.debug)
-        {
-            this.debugFolder = this.debug.addFolder('renderer')
-        }
+        // if(this.debug)
+        // {
+        //     this.debugFolder = this.debug.addFolder('renderer')
+        // }
         
         this.usePostprocess = false
 
