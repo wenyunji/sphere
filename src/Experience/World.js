@@ -16,12 +16,16 @@ export default class World {
     }
 
     setDummy() {
-        this.Sphere = new Sphere()      
+        this.Sphere = new Sphere()
     }
 
-    resize() {}
+    resize() { }
 
-    update() {}
+    update() {
+        if (this.Sphere) {
+            this.Sphere.update()
+        }
+    }
 
-    destroy() {}
+    destroy() { }
 }

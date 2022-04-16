@@ -1,24 +1,12 @@
 # sphere
-#or create a new repository on the command line
-echo "# sphere" >> README.md
-```
-git init
-```
-git add README.md
-```
-git commit -m "first commit"
-```
-git branch -M main
-```
-git remote add origin https://github.com/wenyunji/sphere.git
-```
-git push -u origin main
-```
-#or push an existing repository from the command line
-```
-git remote add origin https://github.com/wenyunji/sphere.git
-```
-git branch -M main
-```
-git push -u origin main
-```
+# Setup
+Download Node.js. Run this followed commands:
+
+# Install dependencies (only the first time)
+npm install
+
+# Run the local server at localhost:8080
+npm run dev
+
+# Build for production in the dist/ directory
+npm run build
