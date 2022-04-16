@@ -122,7 +122,7 @@ export default class Sphere {
         this.lights.a.intensity = 1.85
 
         this.lights.a.color = {}
-        this.lights.a.color.value = '#ff3e00'
+        this.lights.a.color.value = '#d63384'
         this.lights.a.color.instance = new THREE.Color(this.lights.a.color.value)
 
         this.lights.a.spherical = new THREE.Spherical(1, 0.615, 2.049)
@@ -133,7 +133,7 @@ export default class Sphere {
         this.lights.b.intensity = 1.4
 
         this.lights.b.color = {}
-        this.lights.b.color.value = '#0063ff'
+        this.lights.b.color.value = '#1d0ebe'
         this.lights.b.color.instance = new THREE.Color(this.lights.b.color.value)
 
         this.lights.b.spherical = new THREE.Spherical(1, 2.561, - 1.844)
