@@ -3,238 +3,191 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, "PingFang SC", "Microsoft Yahei", sans-serif;
-  }
-  
-  *,
-  *::after,
-  *::before {
-      box-sizing: border-box;
-  }
-  
-  :root {
-      font-size: 18px;
-  }
-  
-  body {
-      margin: 0;
-      --color-text: #fff;
-      --color-bg: #000;
-      --color-link: #5a5a5a;
-      --color-link-hover: #3eaaf1;
-      --color-alt: #3ba2e5;
-      --color-info: #e93f3b;
-      color: var(--color-text);
-      background-color: var(--color-bg);
-      font-family: ltc-bodoni-175, serif;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-  }
-  
-  
-  /* 图片默认宽度100% */
-  img {
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 18px;
+}
+
+body {
+    margin: 0;
+    --color-text: #fff;
+    --color-bg: #000;
+    --color-link: #5a5a5a;
+    --color-link-hover: #3eaaf1;
+    --color-alt: #3ba2e5;
+    --color-info: #e93f3b;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    font-family: ltc-bodoni-175, serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* 图片默认宽度100% */
+img {
     width: 100%;
-  }
-  
-  
-  header {
+}
+
+
+header {
     position: fixed;
     width: 100%;
     z-index: 2;
-  }
-  
-  nav {
+}
+
+nav {
     position: absolute;
     top: 30px;
     width: 100%;
     z-index: 99;
-  }
-  
-  .card {
+}
+
+.card {
     min-height: 260px;
-  }
-  
-  .about-card {
+}
+
+.about-card {
     display: grid;
     grid-template-columns: 100px 1fr;
     text-align: left;
-  }
-  
-  
-  @keyframes myfirst {
+}
+
+
+@keyframes myfirst {
     from {
-      background: red;
+        background: red;
     }
-  
+
     to {
-      background: yellow;
+        background: yellow;
     }
-  }
-  
-  @-webkit-keyframes myfirst {
+}
+
+@-webkit-keyframes myfirst {
     from {
-      background: red;
+        background: red;
     }
-  
+
     to {
-      background: yellow;
+        background: yellow;
     }
-  }
-  
-  
-  
-  .content {
-      display: flex;
-      flex-direction: column;
-      width: 100vw;
-      height: calc(100vh - 13rem);
-      position: relative;
-      justify-content: flex-start;
+}
+
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 13rem);
+    position: relative;
+    justify-content: flex-start;
     align-items: center;
     /* margin-top: -68px; */
-  }
-  
-  .content__title-wrap {
-      position: relative;
-      text-align: center;
-      pointer-events: none;
-      -webkit-touch-callout: none;
-      -webkit-user-select: none;
-      -khtml-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-  }
-  
-  .content__title-wrap a {
-      pointer-events: auto;
-  }
-  
-  
-  @font-face {
-      font-family: 'webfont';
-      font-display: swap;
-      src: url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.eot'); /* IE9*/
-      src: url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-      url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.woff2') format('woff2'),
-      url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.woff') format('woff'), /* chrome、firefox */
-      url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-      url('//at.alicdn.com/t/webfont_xgwqnsm9n4n.svg#站酷高端黑') format('svg'); /* iOS 4.1- */
-    }
-  
-  .web-font {
-      font-family: "webfont" !important;
-      font-size: 16px;
-      font-style: normal;
-      -webkit-font-smoothing: antialiased;
-      -webkit-text-stroke-width: 0.2px;
-      -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .content__title {
-      font-size: 5vw;
-      font-weight: normal;
-      margin: 0.5rem 0 1.5rem;
-      font-family: "微软雅黑" !important;
-  }
-  
-  
-  .content__link {
-      text-decoration: underline;
-      font-family: "宋体";
-      font-size: 1.1rem;
-      color: inherit;
-  }
-  
-  #app {
-      width: 100%;
-      height: 100vh;
-      overflow: hidden;
-      position: absolute;
-  }
-  
-  canvas {
-      width: 100%;
-      height: calc(100vh);
-  }
-  
-  @media screen and (min-width: 53em) {
-      .message {
-          display: none;
-      }
-  
-      .frame {
-          position: fixed;
-          text-align: left;
-          z-index: 100;
-          top: 0;
-          left: 0;
-          display: grid;
-          align-content: space-between;
-          width: 100%;
-          max-width: none;
-          height: 100vh;
-          padding: 2.5rem 4.5rem;
-          pointer-events: none;
-          grid-template-columns: 75% 25%;
-          grid-template-rows: auto auto auto;
-          grid-template-areas: 'title info'
-              '... ...'
-              '... demos';
-      }
-  
-      .frame__title-wrap {
-          grid-area: title;
-          display: flex;
-      }
-  
-      .frame__title {
-          margin: 0 8vw 0 0;
-      }
-  
-      .frame__demos {
-          margin: 0;
-          grid-area: demos;
-          justify-self: end;
-      }
-  
-      .frame__links a {
-          display: inline-block;
-      }
-  
-      .frame__info {
-          justify-self: end;
-      }
-  
-      .frame a {
-          pointer-events: auto;
-      }
-  
-      .content {
-          height: 100vh;
-          justify-content: center;
-      }
-  }
+}
 
-  @font-face {
+#app {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+}
+
+canvas {
+    width: 100%;
+    height: calc(100vh);
+}
+
+@media screen and (min-width: 53em) {
+    .message {
+        display: none;
+    }
+
+    .frame {
+        position: fixed;
+        text-align: left;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        display: grid;
+        align-content: space-between;
+        width: 100%;
+        max-width: none;
+        height: 100vh;
+        padding: 2.5rem 4.5rem;
+        pointer-events: none;
+        grid-template-columns: 75% 25%;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 'title info'
+            '... ...'
+            '... demos';
+    }
+
+    .frame__title-wrap {
+        grid-area: title;
+        display: flex;
+    }
+
+    .frame__title {
+        margin: 0 8vw 0 0;
+    }
+
+    .frame__demos {
+        margin: 0;
+        grid-area: demos;
+        justify-self: end;
+    }
+
+    .frame__links a {
+        display: inline-block;
+    }
+
+    .frame__info {
+        justify-self: end;
+    }
+
+    .frame a {
+        pointer-events: auto;
+    }
+
+    .content {
+        height: 100vh;
+        justify-content: center;
+    }
+}
+
+@font-face {
     font-family: 'webfont';
     font-display: swap;
-    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot'); /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff2') format('woff2'),
-    url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff') format('woff'), /* chrome、firefox */
-    url('//at.alicdn.com/t/webfont_d7qcoaglsch.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-    url('//at.alicdn.com/t/webfont_d7qcoaglsch.svg#思源黑体-极细') format('svg'); /* iOS 4.1- */
-  }
+    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot');
+    /* IE9*/
+    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot?#iefix') format('embedded-opentype'),
+        /* IE6-IE8 */
+        url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff2') format('woff2'),
+        url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff') format('woff'),
+        /* chrome、firefox */
+        url('//at.alicdn.com/t/webfont_d7qcoaglsch.ttf') format('truetype'),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+        url('//at.alicdn.com/t/webfont_d7qcoaglsch.svg#思源黑体-极细') format('svg');
+    /* iOS 4.1- */
+}
 
 .sphere {
-    /* position: fixed; */
+    position: relative;
     width: 100vw;
     height: 100vh;
 }
 
 
-.title {
+.content_title {
     position: absolute;
     top: calc(50% - 14vmin / 2);
     left: 0;
@@ -249,4 +202,11 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+}
+
+.content_link {
+    text-decoration: underline;
+    font-family: "宋体";
+    font-size: 1.1rem;
+    color: inherit;
 }
