@@ -1,0 +1,111 @@
+$purple-100: #c4c6ff;
+$purple-200: #a2a5fc;
+$purple-300: #8888fc;
+$purple-400: #7069fa;
+$purple-500: #5d55fa;
+$purple-600: #4d3df7;
+$purple-700: #3525e6;
+$purple-800: #1d0ebe;
+$purple-900: #0c008c;
+
+$purple: $purple-700;
+$primary: $purple;
+
+$gray-100: #f0f4f8;
+$gray-200: #d9e2ec;
+$gray-300: #bcccdc;
+$gray-400: #9fb3c8;
+$gray-500: #829ab1;
+$gray-600: #627d98;
+$gray-700: #486581;
+$gray-800: #334e68;
+$gray-900: #243b53;
+
+$gray: $gray-900;
+$secondary: $gray;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 2,
+  6: $spacer * 3,
+  7: $spacer * 4,
+  8: $spacer * 6,
+  9: $spacer * 8,
+  10: $spacer * 12,
+  11: $spacer * 16,
+  12: $spacer * 24,
+  13: $spacer * 32,
+  14: $spacer * 40,
+  15: $spacer * 44,
+  16: $spacer * 48,
+);
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base;
+$h7-font-size: $font-size-base * 0.875;
+$h8-font-size: $font-size-base * 0.75;
+// scss-docs-end font-variables
+
+// scss-docs-start font-sizes
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+);
+
+$accordion-icon-width: 1.5rem;
+$accordion-icon-color: $secondary;
+$accordion-icon-active-color: $primary;
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/><path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+
+// $gradient: linear-gradient(to right, raba($primary, 0.95), raba($purple-100, 0.85));
+
+$gradient: linear-gradient(to right, $primary, $purple-500);
+
+$pink-500:#d63384;
+
+.header-line {
+  &::before {
+    content: '';
+    width: 12rem;
+    height: 0.1rem;
+    display: block;
+    margin: 0 auto;
+    background-color: $primary;
+  }
+
+  &::after {
+    content: '';
+    width: 8rem;
+    height: 0.1rem;
+    // padding-top: 0.5rem;
+    display: block;
+    margin: 0 auto;
+    // margin-bottom: 1rem;
+    background-color: $primary;
+    margin-top: -0.3rem;
+  }
+}
+
+$carousel-caption-padding-y:         1.25rem;
+$carousel-caption-spacer:            10.25rem;
+$carousel-caption-width:             60%;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
