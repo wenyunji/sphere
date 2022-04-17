@@ -50,6 +50,7 @@ export default class Camera
         this.modes.debug.orbitControls.enabled = this.modes.debug.active
         this.modes.debug.orbitControls.screenSpacePanning = true
         this.modes.debug.orbitControls.enableKeys = false
+        this.modes.debug.orbitControls.enableZoom = false
         this.modes.debug.orbitControls.zoomSpeed = 0.25
         this.modes.debug.orbitControls.enableDamping = true
         this.modes.debug.orbitControls.update()

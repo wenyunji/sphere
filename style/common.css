@@ -167,18 +167,13 @@ canvas {
 @font-face {
     font-family: 'webfont';
     font-display: swap;
-    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot');
-    /* IE9*/
-    src: url('//at.alicdn.com/t/webfont_d7qcoaglsch.eot?#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff2') format('woff2'),
-        url('//at.alicdn.com/t/webfont_d7qcoaglsch.woff') format('woff'),
-        /* chrome、firefox */
-        url('//at.alicdn.com/t/webfont_d7qcoaglsch.ttf') format('truetype'),
-        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-        url('//at.alicdn.com/t/webfont_d7qcoaglsch.svg#思源黑体-极细') format('svg');
-    /* iOS 4.1- */
-}
+    src: url('../static/font/webfont.eot'); /* IE9*/
+    src: url('../static/font/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../static/font/webfont.woff2') format('woff2'),
+    url('../static/font/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../static/font/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../static/font/webfont.svg#站酷小薇体') format('svg'); /* iOS 4.1- */
+  }
 
 .sphere {
     position: relative;
@@ -186,6 +181,10 @@ canvas {
     height: 100vh;
 }
 
+.sphere2 {
+    width: 100vw;
+    height: 100vh;
+}
 
 .content_title {
     position: absolute;
@@ -195,9 +194,10 @@ canvas {
     color: #ffffff;
     font-size: 10vmin;
     text-transform: uppercase;
+    letter-spacing: 0.5em;
     text-align: center;
     outline: none;
-    font-family: 'webfont', Helvetica, Arial, sans-serif;
+    font-family: 'webfont'!important;;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
